@@ -38,8 +38,8 @@ class FMTest(unittest.TestCase):
         """
         launch  app store and exit
         """
-        for i in xrange(2):
-            d.press('back')
+        for i in xrange(8):
+            d.press('right')
             d.sleep(1)
         assert d(text="网络电台").exists, 'FM app icon not found!'
         d(text="网络电台").click.wait()
