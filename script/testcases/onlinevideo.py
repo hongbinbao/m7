@@ -19,6 +19,7 @@ class OnlineVideoTest(unittest.TestCase):
         d.watcher("PASS_TOGIC_UPDATE").when(packageName='com.togic.livevideo', textContains="已阅读").press('enter','enter')
         d.watcher("PASS_VST_UPDATE2").when(textContains='根据国家现行政策规定').press('enter')
         d.watcher("PASS_ANR").when(textContains='关闭吗').click(text='确定')
+        d.watcher("PASS_FC").when(textContains='停止运行').click(text='确定')
         d.wakeup()
         for i in xrange(3): 
             d.press('back')
@@ -41,6 +42,7 @@ class OnlineVideoTest(unittest.TestCase):
         d.watchers.remove("PASS_VST_UPDATE2")
         d.watchers.remove("PASS_TOGIC_UPDATE")
         d.watchers.remove("PASS_ANR")
+        d.watchers.remove("PASS_FC")
         for i in xrange(4):
             d.press('back')
             d.sleep(1)
