@@ -108,7 +108,7 @@ class SystemAppTest(unittest.TestCase):
         d.press('back')
         d.sleep(3)
         d.press('back')
-        assert d(text="应用商店", packageName='com.xiaomi.tv.desktop').wait.exists(timeout=15000), 'exit from Media Explorer failed!'
+        assert d(packageName='com.xiaomi.tv.desktop').wait.exists(timeout=15000), 'exit from Media Explorer failed!'
 
     def testLaunchAndExitCloudGallery(self):
         """
