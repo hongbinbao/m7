@@ -1,0 +1,15 @@
+[tests]
+#common define
+script.testcases.systemapp.SystemAppTest.testLaunchAndExitAppStore = 5
+script.testcases.systemapp.SystemAppTest.testLaunchAndExitCloudGallery = 5
+script.testcases.systemapp.SystemAppTest.testLaunchAndExitGameCenter = 5
+script.testcases.systemapp.SystemAppTest.testLaunchAndExitFM = 5
+script.testcases.systemapp.SystemAppTest.testLaunchAndExitSetting = 5
+script.testcases.onlinevideo.OnlineVideoTest.testPlayOnlineVideo = 10
+script.testcases.systemapp.SystemAppTest.testLaunchAboutSetting = 5
+script.testcases.systemapp.SystemAppTest.testLaunchSystemUpdateSetting = 5
+script.testcases.onlinevideo.OnlineVideoTest.testPlayOnlineVideoLong = 10
+script.testcases.fm.FMTest.testSwitchSong = 5
+script.testcases.systemapp.SystemAppTest.testLaunchNetworkSetting = 5
+script.testcases.systemapp.SystemAppTest.testLaunchAndExitVideo = 5
+
